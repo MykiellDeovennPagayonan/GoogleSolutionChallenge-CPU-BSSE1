@@ -1,0 +1,13 @@
+.app {
+  height: 100vh;
+  display: block;
+}
+
+h3 {
+  color: white;
+}
+
+h4 {
+  color: white;
+  margin: 0px;
+}

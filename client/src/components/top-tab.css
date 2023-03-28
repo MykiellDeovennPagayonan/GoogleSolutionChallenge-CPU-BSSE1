@@ -1,0 +1,58 @@
+.top-tab {
+  height: 70px;
+  width: 100%;
+  background-color: white;
+  align-content: center;
+  position: relative
+}
+
+.horizontal-line {
+  height: 5px;
+  background-color: #42B883;
+}
+
+.top-tab-content {
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-family: sans-serif;
+  font-weight: bold;
+  width: 400px;
+  text-align: center;
+}
+
+.tabs {
+  height: 40px;
+  width: 800px;
+  background-color: #35495E;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+}
+
+.tabs-button {
+  height: 40px;
+  width: 200px;
+  background-color: #35495E;
+  border-radius: 25px;
+  border: 2px solid #35495E;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+}
+
+.logo-holder {
+  width: 15%;
+  display: block;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  background-color: #35495E;
+  margin-left: auto;
+}

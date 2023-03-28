@@ -1,0 +1,29 @@
+.history-content {
+  width: auto;
+  height: auto;
+  padding: 50px;
+}
+
+.speech-holder {
+  width: auto;
+  height: auto;
+  background-color: #35495E;
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.speech-transcript {
+  background-color: #121837;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.transcript {
+  margin-left: 20px;
+}
+
+.see-more {
+  cursor: pointer;
+  margin-top: 10px;
+  text-align: center;
+}
