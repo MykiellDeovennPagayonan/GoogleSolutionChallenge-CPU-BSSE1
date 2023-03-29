@@ -30,11 +30,11 @@ export default function History() {
         if (open[index]){
           return (
             <div className='speech-holder'>
-              <div className='speech-transcript'>
+              <div className='history-content-holder'>
                 <h3 style={{color: '#42B883', margin: 0}}> Transcript: </h3>
                 <h4 className='transcript'> {speech.transcript} </h4>
               </div>
-              <div className='speech'>
+              <div className='history-content-holder'>
                 <h3 style={{color: '#42B883', margin: 0}}> Transcript: </h3>
                 <h4 className='transcript'> {speech.transcript} </h4>
               </div>
@@ -48,7 +48,7 @@ export default function History() {
         } else {
           return (
             <div className='speech-holder'>
-              <div className='speech'>
+              <div className='history-content-holder'>
                 <h3 style={{color: '#42B883', margin: 0}}> Transcript: </h3>
                 <h4 className='transcript'> {speech.transcript} </h4>
               </div>

@@ -3,11 +3,10 @@ import React, { useEffect, useState } from 'react';
 const { Configuration, OpenAIApi } = require("openai");
 
 export default function SpeechEmotion(props) {
-  const [ emotions, setEmotions ] = useState([])
   const [ sentences, setSentences ] = useState(props.speechScript.split(/(?<=[.?!])\s+/))
 
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "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",
   });
   const openai = new OpenAIApi(configuration);
 
@@ -53,7 +52,7 @@ export default function SpeechEmotion(props) {
     setSentences(props.speechScript.split(/(?<=[.?!])\s+/))
     async function getEmotions() {
       const emotions = await Promise.all(sentences.map((sentence) => detectEmotion(sentence)));
-      setEmotions(emotions);
+      props.setEmotions(emotions);
     }
     getEmotions();
   }, [props.speechScript]);
@@ -61,7 +60,7 @@ export default function SpeechEmotion(props) {
   if (props.analysisPageNum === 2) {
     return (
       <div className='speech-emotion-content'>
-        {emotions}
+        {props.emotions}
       </div>
     );
   } else {

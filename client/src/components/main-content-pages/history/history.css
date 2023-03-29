@@ -12,10 +12,11 @@
   border-radius: 30px;
 }
 
-.speech-transcript {
+.history-content-holder {
   background-color: #121837;
   padding: 10px;
   border-radius: 20px;
+  margin-bottom: 10px;
 }
 
 .transcript {

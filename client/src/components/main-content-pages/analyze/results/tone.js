@@ -7,7 +7,7 @@ export default function Tone(props) {
   const sentences = props.speechScript.split(/(?<=[.?!])\s+/);
 
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "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",
   });
   const openai = new OpenAIApi(configuration);
 

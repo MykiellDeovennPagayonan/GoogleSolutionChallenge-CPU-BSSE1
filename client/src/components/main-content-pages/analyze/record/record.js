@@ -127,7 +127,6 @@ export default function Record(props) {
             <button className='button-record' style={{backgroundColor: '#42B883'}} onClick={() => {SpeechRecognition.startListening({continuous: true}); props.setRecording(true); resetTranscript(); props.setShowResults(false)}}> Start Record </button>
           }
           <button className='button-record' style={{backgroundColor: '#35495E', color: 'white'}} onClick={() => {props.setRecording(false); props.setShowResults(true)}}> Analyze </button>
-          <button className='button-record' style={{backgroundColor: '#35495E', color: 'white'}} onClick={() => {}}> Save </button>
         </div>
       </div>
     </div>
