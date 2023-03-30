@@ -10,8 +10,9 @@ export default function Emphasis(props) {
   const markInstanceRef = useRef(null);
 
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "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",
   });
+  
   const openai = new OpenAIApi(configuration);
 
   const prompt = `Identify important phrases in the script, that should be highlighted during delivery. List it separated by a |. Do not place it inside of "" \nScript: `;

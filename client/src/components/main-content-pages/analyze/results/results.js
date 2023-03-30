@@ -22,8 +22,8 @@ export default function Results(props) {
   return (
     <div className='results-content'>
       <div className='results-content-holder'>
-        <FacialEmotion facialEmotions={props.facialEmotions} analysisPageNum={analysisPageNum} emotionColor={emotionColor}/>
         <div className='results-content-holder-text'>
+          <FacialEmotion facialEmotions={props.facialEmotions} analysisPageNum={analysisPageNum} emotionColor={emotionColor}/>
           <Transcript speechScript={props.speechScript} analysisPageNum={analysisPageNum}/>
           <SpeechEmotion speechScript={props.speechScript} analysisPageNum={analysisPageNum} emotionColor={emotionColor} emotions={props.emotions} setEmotions={props.setEmotions}/>
           <Tone speechScript={props.speechScript} analysisPageNum={analysisPageNum}/>

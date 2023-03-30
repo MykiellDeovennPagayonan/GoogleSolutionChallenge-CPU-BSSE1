@@ -6,6 +6,7 @@ import MainContent from './components/main-content';
 export default function App() {
   const [ pageNum, setPageNum ] = useState(0)
 
+  console.log(process.env)
 
   return (
     <div className='app'>

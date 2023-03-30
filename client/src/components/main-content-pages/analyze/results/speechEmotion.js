@@ -6,7 +6,7 @@ export default function SpeechEmotion(props) {
   const [ sentences, setSentences ] = useState(props.speechScript.split(/(?<=[.?!])\s+/))
 
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "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",
   });
   const openai = new OpenAIApi(configuration);
 
@@ -60,6 +60,36 @@ export default function SpeechEmotion(props) {
   if (props.analysisPageNum === 2) {
     return (
       <div className='speech-emotion-content'>
+        <div className='legend'>
+          <div className='color-label-holder'>
+            <div style={{backgroundColor: props.emotionColor.happy}} className='color'></div>
+            <h3>happy</h3>
+          </div>
+          <div className='color-label-holder'>
+            <div style={{backgroundColor: props.emotionColor.angry}} className='color'></div>
+            <h3>angry</h3>
+          </div>
+          <div className='color-label-holder'>
+            <div style={{backgroundColor: props.emotionColor.disgusted}} className='color'></div>
+            <h3>disgusted</h3>
+          </div>
+          <div className='color-label-holder'>
+            <div style={{backgroundColor: props.emotionColor.fearful}} className='color'></div>
+            <h3>fearful</h3>
+          </div>
+          <div className='color-label-holder'>
+            <div style={{backgroundColor: props.emotionColor.neutral}} className='color'></div>
+            <h3>neutral</h3>
+          </div>
+          <div className='color-label-holder'>
+            <div style={{backgroundColor: props.emotionColor.sad}} className='color'></div>
+            <h3>sad</h3>
+          </div>
+          <div className='color-label-holder'>
+            <div style={{backgroundColor: props.emotionColor.surprised}} className='color'></div>
+            <h3>surprised</h3>
+          </div>
+        </div>
         {props.emotions}
       </div>
     );

@@ -6,7 +6,7 @@ export default function Recommendation(props) {
   const [ suggestions, setSuggestions] = useState("Loading...");
 
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "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",
   });
   const openai = new OpenAIApi(configuration);
 

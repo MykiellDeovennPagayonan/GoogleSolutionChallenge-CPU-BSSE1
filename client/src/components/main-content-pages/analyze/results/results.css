@@ -4,7 +4,7 @@
   background-color: #35495E;
   border-radius: 40px;
   display: grid;
-  grid-template-columns: 1fr 200px
+  grid-template-columns: 1fr 200px;
 }
 
 .results-content-holder {
@@ -55,4 +55,28 @@
 .stats-facial-timeline-bar {
   height: 100%;
   display: inline-block
+}
+
+.legend {
+  margin-top: 30px;
+  height: 150px;
+  width: 1050px;
+  margin: auto;
+  display: flex
+}
+
+.color-label-holder {
+  height: 150px;
+  width: 150px;
+  display: grid;
+  grid-template-rows: 90px 60px;
+  text-align: center;
+}
+
+.color {
+  height: 80px;
+  width: 80px;
+  margin: auto;
+  margin-top: 0px;
+  border: 2px solid white;
 }

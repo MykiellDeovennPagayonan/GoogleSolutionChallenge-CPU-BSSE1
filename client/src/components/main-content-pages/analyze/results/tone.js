@@ -7,7 +7,7 @@ export default function Tone(props) {
   const sentences = props.speechScript.split(/(?<=[.?!])\s+/);
 
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: "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",
   });
   const openai = new OpenAIApi(configuration);
 
@@ -49,6 +49,20 @@ export default function Tone(props) {
     return (
       <div className='tone-content'>
         {emotions}
+        <div className='legend' style={{marginTop: 50, width: 450}}>
+          <div className='color-label-holder'>
+            <button style={{backgroundColor: 'rgb(48, 48, 48)', borderColor: "white"}} className='color'></button>
+            <h3>Formal</h3>
+          </div>
+          <div className='color-label-holder'>
+            <div style={{backgroundColor: 'rgb(245, 166, 35)'}} className='color'></div>
+            <h3>Light-Hearted</h3>
+          </div>
+          <div className='color-label-holder'>
+            <div style={{backgroundColor: 'rgb(140, 200, 182)'}} className='color'></div>
+            <h3>Calm</h3>
+          </div>
+        </div>
       </div>
     );
   } else {
